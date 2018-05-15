@@ -1,0 +1,17 @@
+body, button {
+	font-family: Verdana;
+}
+
+button {
+	margin-left: 20px;
+	cursor: pointer;
+	border: 1px solid gray;
+	background-color: transparent;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	color: white;
+	background-color: #e28ea9;
+}
