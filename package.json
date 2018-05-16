@@ -1,5 +1,5 @@
 {
-  "name": "proba",
+  "name": "TodoList",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -22,10 +22,18 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack",
     "start": "webpack-dev-server --inline --hot --config ./webpack.config.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elwira-m/Zadanie-16.7.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elwira-m/Zadanie-16.7/issues"
+  },
+  "homepage": "https://github.com/elwira-m/Zadanie-16.7#readme"
 }
