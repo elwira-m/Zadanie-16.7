@@ -3,7 +3,7 @@ import style from './App.css';
 import uuid from 'uuid';
 import Title from '../components/Title';
 import TodoList from '../components/TodoList';
-//import TodoForm from '../components/TodoForm';
+import TodoForm from '../components/TodoForm';
 
 class App extends React.Component {
     constructor(props){
@@ -38,11 +38,11 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className={style.TodoApp}>
-				
+			<div className={style.TodoApp}>				
 				<Title title='LISTA ZADAŃ' 
-				taskCounter={this.state.data.length}/>
-								
+				    taskCounter={this.state.data.length}/>	
+                <TodoForm addTodo={this.addTodo.bind(this)} />
+                <TodoList data={this.state.data} remove={this.removeTodo.bind(this)} />							
 			</div>
 		);
 	}
